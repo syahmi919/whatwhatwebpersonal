@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Syahmi's Skill</title>
+</head>
+<body>
+    <div class="grid-2">
+        <div class="section-1">
+          <a href="index.html"<i class="fas fa-code fa-10x white"></i></a>
+            <h2>Ahmad Syahmi</h2>
+            <p>Kota Damansara,Selangor</p>
+            <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/"><i class="fab fa-github"></i></a>
+						<a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+            <p> Press the Code button to go back.</p>
+        </div>
+        <div class="section-2">
+          take on me
+<audio controls>
+  <source src="music/music1.mp3">
+
+    </audio>
+    staying alive
+    <audio controls>
+      <source src="music/music2.mp3">
+        </audio>
+        Fur Elise
+        <audio controls>
+          <source src="music/music3.mp3">
+            </audio>
+            Billie Jean
+            <audio controls>
+              <source src="music/music4.mp3">
+
+                </audio>
+                Never Gonna Give You Up
+                <audio controls>
+                  <source src="music/music5.mp3">
+
+                    </audio>
+
+<script>
+  document.addEventListener('play', function(e){
+    var audios = document.getElementsByTagName('audio');
+    for(var i = 0, len = audios.length; i < len;i++){
+        if(audios[i] != e.target){
+            audios[i].pause();
+        }
+    }
+}, true);
+  </script>
+
+
+
+
+
+        </div>
+    </div>
+</body>
+</html>

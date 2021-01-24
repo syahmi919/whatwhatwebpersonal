@@ -1,0 +1,64 @@
+
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="music2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Syahmi's Skill</title>
+</head>
+<body>
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" >Home</a>
+    <a href="hobby.html">Hobby</a>
+    <a href="music2.html" class="active">Study Music</a>
+    <a href="movie.html">Movie Picks</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+    <div class="grid-2">
+        <div class="section-1">
+          <a href="index.html" <i class="fas fa-code fa-10x white"></i></a>
+            <h2>Ahmad Syahmi</h2>
+            <p>Kota Damansara,Selangor</p>
+            <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/"><i class="fab fa-github"></i></a>
+						<a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+            <p> Press the Code button to go back.</p>
+        </div>
+        <div class="section-2">
+
+          <img src="music/cover1.png" id="background" />
+              <audio src="music/music1.mp3" id="song"></audio>
+
+              <div class="container">
+                  <div class="box"></div>
+                  <img src="music/cover1.jpg" id="thumbnail" />
+
+                  <img src="img/media/play.png" onclick="playPause()" id="play-pause" />
+                  <img src="img/media/forward.png" onclick="nextSong()" id="next-song" />
+                  <img src="img/media/backward.png" onclick="previousSong()" id="previous-song" />
+
+                  <div class="song-artist">A-Ha</div>
+                  <div class="song-title">Take On Me</div>
+
+
+                  <input type="range" id="progress-bar"  min="0" max="" value="0" onchange="changeProgressBar()"/>
+
+                  <div class="currentTime"></div>
+                  <div class="durationTime"></div>
+              </div>
+
+
+                  </div>
+              </div>
+          </body>
+          <script src="music2.js">
+
+          </script>
+          </html>

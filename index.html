@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+form *{
+  display:block;
+  margin:10px;
+}
+</style>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Syahmi's Biodata</title>
+</head>
+<body>
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" class="active">Home</a>
+    <a href="hobby.html">Hobby</a>
+    <a href="music2.html">Study Music</a>
+    <a href="movie.html">Movie Picks</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+    <div class="grid-2">
+        <div class="section-1">
+            <i class="fas fa-code fa-5x white"></i>
+            <h2>Ahmad Syahmi</h2>
+            <p>Kota Damansara,Selangor</p>
+            <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/"><i class="fab fa-github"></i></a>
+						<a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+<br><br><br>
+<div class="bruh">
+            <video style='border:1px solid #fff' autoplay controls>
+
+<source src="vid/alfatihah.mkv" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</div>
+        </div>
+        <div class="section-2">
+            <h2>About</h2>
+            <p>Hello, I am Ahmad Syahmi and I'm currently studying my Bachelor's Degree in Computer Science in UiTM Kampus Tapah. I love to watch tv shows and coding. Welcome to my personal website! </p>
+
+            <h2>Hobby</h2>
+          <p><button class="btn" onclick="document.location='hobby.html'">Hobby</button></p>
+
+            <h2>Programming Skills</h2>
+            <p><button class="btn" onclick="document.location='skills.html'">Skills</button></p>
+            <h2>My Favourite Study Music</h2>
+      <p><button class="btn" onclick="document.location='music2.html'">Study Music</button></p>
+      <h2>My Favourite Movie/TV Shows</h2>
+  <p><button class="btn" onclick="document.location='movie.html'">Movie/TV Shows</button></p>
+            <h2>Leave any Comments</h2>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScmE6eqi_4pKqyJnbly0JT7_vvY0m3h6pC6Juy8pwPZe3R1Fw/viewform?embedded=true" width="500" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
+    </div>
+</body>
+
+</html>
